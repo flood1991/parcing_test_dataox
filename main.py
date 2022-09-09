@@ -30,17 +30,17 @@ def main():
             if price == ' ':
                 price = at_price
 
-            with LocalSession() as db_session:
-                flat = Flat(img_link=image,
-                            title=title,
-                            date=date,
-                            city=city,
-                            beds=beds,
-                            description=description,
-                            currency=currency,
-                            price=price)
-                db_session.add(flat)
-                db_session.commit()
+            # with LocalSession() as db_session:
+            #     flat = Flat(img_link=image,
+            #                 title=title,
+            #                 date=date,
+            #                 city=city,
+            #                 beds=beds,
+            #                 description=description,
+            #                 currency=currency,
+            #                 price=price)
+            #     db_session.add(flat)
+            #     db_session.commit()
 
 
 main()
