@@ -22,7 +22,7 @@ def write_to_sheets(number, page, image,
     sheets.update_values(write_values, [[image], [title], [date],
                                         [city], [beds], [description],
                                         [currency], [price]], "Columns")
-    sleep(0.6)
+    sleep(0.8)
 
 
 def db_write(image, title, date,
